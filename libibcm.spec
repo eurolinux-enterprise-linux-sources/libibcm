@@ -1,6 +1,6 @@
 Name: libibcm
 Version: 1.0.5
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: Userspace InfiniBand Connection Manager
 Group: System Environment/Libraries
 License: GPLv2 or BSD
@@ -61,6 +61,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.a
 
 %changelog
+* Fri Jan 20 2012 Doug Ledford <dledford@redhat.com> - 1.0.5-3
+- Bump and rebuild against latest libibverbs
+- Related: bz750609
+
 * Mon Jan 11 2010 Doug Ledford <dledford@redhat.com> - 1.0.5-2
 - Switch from ExclusiveArch with a big list to ExcludeArch with a small list
 
