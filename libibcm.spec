@@ -1,6 +1,6 @@
 Name: libibcm
 Version: 1.0.5
-Release: 7%{?dist}
+Release: 8%{?dist}
 Summary: Userspace InfiniBand Connection Manager
 Group: System Environment/Libraries
 License: GPLv2 or BSD
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.a
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.5-8
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.5-7
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
